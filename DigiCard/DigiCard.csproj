@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\Biography.cs" />
     <Compile Include="Model\ContactInfo.cs" />
+    <Compile Include="Model\Katas\FizzBuzz.cs" />
     <Compile Include="Model\ID.cs" />
     <Compile Include="Model\CodingKatas.cs" />
     <Compile Include="Model\Professional.cs" />
@@ -82,12 +83,16 @@
     <Compile Include="Views\ContactView.xaml.cs">
       <DependentUpon>ContactView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\KataViews\FizzBuzzView.xaml.cs">
+      <DependentUpon>FizzBuzzView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\KataView.xaml.cs">
       <DependentUpon>KataView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\KataViewModels\FizzBuzzViewModel.cs" />
     <Compile Include="Views\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
     </Compile>
@@ -118,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ContactView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KataViews\FizzBuzzView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

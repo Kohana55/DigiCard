@@ -6,7 +6,15 @@ namespace DigiCard.ViewModels
 {
     public class KataViewModel : BindableBase
     {
+        /// <summary>
+        /// A reference to the Coding Katas class from the model
+        /// </summary>
         private CodingKatas model;
+
+        /// <summary>
+        /// A FizzBuzz ViewModel
+        /// </summary>
+        public FizzBuzzViewModel fizzBuzzVM = new FizzBuzzViewModel();
 
         public string Header
         {

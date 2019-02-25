@@ -99,6 +99,8 @@ namespace DigiCard.ViewModels
             proVM.IsVisible = CurrentPage == Enums.Views.Professional ? Visibility.Visible : Visibility.Hidden;
             kataVM.IsVisible = CurrentPage == Enums.Views.Kata ? Visibility.Visible : Visibility.Hidden;
             contactVM.IsVisible = CurrentPage == Enums.Views.Contact ? Visibility.Visible : Visibility.Hidden;
+
+            //kataVM.fizzBuzzVM.IsVisible = Visibility.Hidden;
         }
         #endregion Methods
     }

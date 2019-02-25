@@ -7,6 +7,11 @@
         public string body = "FizzBuzz: <Click Here>\n" +
                              "BubbleSort: <Click Here>";
 
-        public CodingKatas() { }
+        public FizzBuzz fizzBuzz;
+
+        public CodingKatas()
+        {
+            fizzBuzz = new FizzBuzz();
+        }
     }
 }

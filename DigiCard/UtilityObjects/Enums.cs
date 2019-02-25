@@ -17,5 +17,10 @@
             Kata,
             Contact
         }
+
+        public enum KataViews
+        {
+            FizzBuzz
+        }
     }
 }

@@ -53,6 +53,8 @@ namespace DigiCard.Views
                 _ProfessionalView.ViewModel = value.proVM;
                 _KataView.ViewModel = value.kataVM;
                 _Contact.ViewModel = value.contactVM;
+
+                _KataView._FizzBuzzView.ViewModel = value.kataVM.fizzBuzzVM;
             }
         }     
 
