@@ -4,9 +4,9 @@ using System.Windows;
 
 namespace DigiCard.ViewModels
 {
-    public class HomeViewModel : BindableBase
+    public class IdViewModel : BindableBase
     {
-        private Home model;
+        private ID model;
 
         public string Header
         {
@@ -29,7 +29,7 @@ namespace DigiCard.ViewModels
         }
         private Visibility isVisible = Visibility.Collapsed;
 
-        public HomeViewModel (Home modelArg)
+        public IdViewModel (ID modelArg)
         {
             model = modelArg;
             Header = model.header;

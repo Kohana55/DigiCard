@@ -16,7 +16,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Content="HOME" x:Name="Home" Command="{Binding HomeSelect}" BorderThickness="0" Width="300" Grid.Row="0" Background="Transparent" FontSize="24" Foreground="White" HorizontalAlignment="Left">
+        <Button Content="ID" x:Name="Home" Command="{Binding IdSelect}" BorderThickness="0" Width="300" Grid.Row="0" Background="Transparent" FontSize="24" Foreground="White" HorizontalAlignment="Left">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border x:Name="border" Background="{TemplateBinding Background}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" BorderThickness="2">

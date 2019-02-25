@@ -57,7 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Model\Biography.cs" />
     <Compile Include="Model\ContactInfo.cs" />
-    <Compile Include="Model\Home.cs" />
+    <Compile Include="Model\ID.cs" />
     <Compile Include="Model\CodingKatas.cs" />
     <Compile Include="Model\Professional.cs" />
     <Compile Include="Model\Skills.cs" />
@@ -68,7 +68,7 @@
     <Compile Include="ViewModels\BioViewModel.cs" />
     <Compile Include="ViewModels\CardViewModel.cs" />
     <Compile Include="ViewModels\ContactViewModel.cs" />
-    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\IdViewModel.cs" />
     <Compile Include="ViewModels\KataViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\ProViewModel.cs" />

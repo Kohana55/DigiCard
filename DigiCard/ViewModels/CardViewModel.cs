@@ -34,7 +34,7 @@ namespace DigiCard.ViewModels
         /// Create viewmodels
         /// </summary>
         public MenuViewModel menuVM;
-        public HomeViewModel homeVM;
+        public IdViewModel homeVM;
         public BioViewModel bioVM;
         public SkillsViewModel skillsVM;
         public ProViewModel proVM;
@@ -69,14 +69,14 @@ namespace DigiCard.ViewModels
             model = new CardModel();
 
             menuVM = new MenuViewModel();
-            homeVM = new HomeViewModel(model.home);
+            homeVM = new IdViewModel(model.home);
             bioVM = new BioViewModel(model.bio);
             skillsVM = new SkillsViewModel(model.skills);
             proVM = new ProViewModel(model.pro);
             kataVM = new KataViewModel(model.kata);
             contactVM = new ContactViewModel(model.contact);
             
-            CurrentPage = Enums.Views.Home;
+            CurrentPage = Enums.Views.ID;
 
             menuVM.OnMenuClick += MenuVM_OnMenuClick;
         }
@@ -93,7 +93,7 @@ namespace DigiCard.ViewModels
         /// </summary>
         private void UpdateView()
         {
-            homeVM.IsVisible = CurrentPage == Enums.Views.Home ? Visibility.Visible : Visibility.Hidden;
+            homeVM.IsVisible = CurrentPage == Enums.Views.ID ? Visibility.Visible : Visibility.Hidden;
             bioVM.IsVisible = CurrentPage == Enums.Views.Bio ? Visibility.Visible : Visibility.Hidden;
             skillsVM.IsVisible = CurrentPage == Enums.Views.Skills ? Visibility.Visible : Visibility.Hidden;
             proVM.IsVisible = CurrentPage == Enums.Views.Professional ? Visibility.Visible : Visibility.Hidden;

@@ -21,11 +21,11 @@ namespace DigiCard.ViewModels
         /// Each command calls a method in this class
         /// </summary>
         #region Commands
-        public ICommand HomeSelect
+        public ICommand IdSelect
         {
-            get { return homeSelect ?? (homeSelect = new DelegateCommand(HomeSelected)); }
+            get { return idSelect ?? (idSelect = new DelegateCommand(IdSelected)); }
         }
-        private ICommand homeSelect;
+        private ICommand idSelect;
 
         public ICommand BioSelect
         {
@@ -63,9 +63,9 @@ namespace DigiCard.ViewModels
         #endregion Constructor
 
         #region Methods
-        public void HomeSelected()
+        public void IdSelected()
         {
-            CurrentPage = Enums.Views.Home;
+            CurrentPage = Enums.Views.ID;
             OnMenuClick?.Invoke(this, CurrentPage);
         }
 

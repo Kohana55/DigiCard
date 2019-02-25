@@ -22,9 +22,9 @@ namespace DigiCard.Views
     public partial class HomeView : UserControl
     {
 
-        public HomeViewModel ViewModel
+        public IdViewModel ViewModel
         {
-            get { return DataContext as HomeViewModel; }
+            get { return DataContext as IdViewModel; }
             set { DataContext = value; }
         }
 

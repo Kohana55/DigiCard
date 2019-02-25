@@ -18,12 +18,20 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="313*"/>
+            <ColumnDefinition Width="487*"/>
         </Grid.ColumnDefinitions>
+
+        <Border Background="Yellow" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Border Background="Yellow" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
+
+        <Image Source="/Assets/Lew.jpg" Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" HorizontalAlignment="Left"/>
         
-        <TextBlock Text="{Binding Header}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Foreground="White" FontSize="26"/>
-        <TextBlock Text="{Binding Body}" Grid.Row="1" Grid.Column="1"/>
-        <Image Source="/Assets/Lew.jpg" Grid.Row="0" Grid.Column="0" Grid.RowSpan="6"/>
+        <TextBlock Text="NAME:" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <TextBlock Text="{Binding Header}" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="26"/>
+
+        <TextBlock Text="AGE:" Grid.Column="1" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <TextBlock Text="{Binding Body}" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="26"/>
+        
     </Grid>
 </UserControl>

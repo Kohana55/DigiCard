@@ -10,7 +10,7 @@
         /// </summary>
         public enum Views
         {
-            Home,
+            ID,
             Bio, 
             Skills,
             Professional,

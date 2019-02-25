@@ -15,7 +15,7 @@ namespace DigiCard.Model
         /// Setting the 'header' and 'body' fields  
         /// will cause them to display on the front end
         /// </summary>
-        public Home home = new Home();
+        public ID home = new ID();
         public Biography bio = new Biography();
         public Skills skills = new Skills();
         public Professional pro = new Professional();
