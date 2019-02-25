@@ -6,7 +6,7 @@ namespace DigiCard.ViewModels
 {
     public class BioViewModel : BindableBase
     {
-        private BioObj model;
+        private Biography model;
 
         public Visibility IsVisible
         {
@@ -15,7 +15,7 @@ namespace DigiCard.ViewModels
         }
         private Visibility isVisible = Visibility.Collapsed;
 
-        public BioViewModel(BioObj bioArg)
+        public BioViewModel(Biography bioArg)
         {
             model = bioArg;
         }

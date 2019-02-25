@@ -1,18 +1,26 @@
 ﻿using DigiCard.UtilityObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace DigiCard.ViewModels
 {
+    /// <summary>
+    /// Menu View Model
+    /// </summary>
     public class MenuViewModel : BindableBase
     {
 
-        public Enums.Views CurrentPage { get; set; }
+        /// <summary>
+        /// Current page to display
+        /// </summary>
+        public Enums.Views CurrentPage;
 
+        /// <summary>
+        /// COMMANDS
+        /// Each command is bound to its button in the MenuView.xaml
+        /// This binding is possible because we have assigned the MenuView's Datacontex to this ViewModel
+        /// Each command calls a method in this class
+        /// </summary>
+        #region Commands
         public ICommand HomeSelect
         {
             get { return homeSelect ?? (homeSelect = new DelegateCommand(HomeSelected)); }
@@ -48,9 +56,13 @@ namespace DigiCard.ViewModels
             get { return contactSelect ?? (contactSelect = new DelegateCommand(ContactSelected)); }
         }
         private ICommand contactSelect;
+        #endregion Commands
 
+        #region Constructor
         public MenuViewModel() { }
+        #endregion Constructor
 
+        #region Methods
         public void HomeSelected()
         {
             CurrentPage = Enums.Views.Home;
@@ -86,8 +98,11 @@ namespace DigiCard.ViewModels
             CurrentPage = Enums.Views.Contact;
             OnMenuClick?.Invoke(this, CurrentPage);
         }
+        #endregion Methods
 
+        #region EventandDelegate
         public delegate void OnMenuClickEventHandler(object sender, Enums.Views e);
         public event OnMenuClickEventHandler OnMenuClick;
+        #endregion EventandDelegate
     }
 }

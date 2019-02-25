@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DigiCard.UtilityObjects
+﻿namespace DigiCard.UtilityObjects
 {
+    /// <summary>
+    /// Enums
+    /// </summary>
     public class Enums
     {
+        /// <summary>
+        /// Used to set which view is being displayed
+        /// </summary>
         public enum Views
         {
             Home,

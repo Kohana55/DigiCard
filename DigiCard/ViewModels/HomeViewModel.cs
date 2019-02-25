@@ -6,7 +6,7 @@ namespace DigiCard.ViewModels
 {
     public class HomeViewModel : BindableBase
     {
-        private HomeObj model;
+        private Home model;
 
         public string Header
         {
@@ -29,11 +29,11 @@ namespace DigiCard.ViewModels
         }
         private Visibility isVisible = Visibility.Collapsed;
 
-        public HomeViewModel (HomeObj modelArg)
+        public HomeViewModel (Home modelArg)
         {
             model = modelArg;
-            Header = "Home Header";
-            Body = "Home Body \n(This string plus header are Databinding from the VM)";
+            Header = model.header;
+            Body = model.body;
         }
     }
 }

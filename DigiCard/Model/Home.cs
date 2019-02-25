@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace DigiCard.Model
 {
-    public class BioObj
+    public class Home
     {
 
-        public BioObj() { }
+        public string header = "From Model";
+        public string body = "From Model";
+
+        public Home() { }
     }
 }

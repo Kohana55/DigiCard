@@ -55,11 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\BioObj.cs" />
-    <Compile Include="Model\HomeObj.cs" />
+    <Compile Include="Model\Biography.cs" />
+    <Compile Include="Model\ContactInfo.cs" />
+    <Compile Include="Model\Home.cs" />
+    <Compile Include="Model\CodingKatas.cs" />
+    <Compile Include="Model\Professional.cs" />
+    <Compile Include="Model\Skills.cs" />
     <Compile Include="UtilityObjects\BindableBase.cs" />
     <Compile Include="UtilityObjects\DeleteCommand.cs" />
-    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\CardModel.cs" />
     <Compile Include="UtilityObjects\Enums.cs" />
     <Compile Include="ViewModels\BioViewModel.cs" />
     <Compile Include="ViewModels\CardViewModel.cs" />

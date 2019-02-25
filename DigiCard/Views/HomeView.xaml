@@ -9,10 +9,10 @@
              Visibility="{Binding IsVisible}">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding Header}" HorizontalAlignment="Center" Grid.Row="0"/>
-        <TextBlock Text="{Binding Body}" HorizontalAlignment="Center" Grid.Row="1"/>
+        <TextBlock Text="{Binding Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" FontSize="16"/>
+        <TextBlock Text="{Binding Body}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
     </Grid>
 </UserControl>
