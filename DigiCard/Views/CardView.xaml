@@ -9,19 +9,28 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="Blue" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+
         <!--Left: MENU-->
-        <controls:MenuView x:Name="_MenuView" Grid.Column="0"/>
+        <controls:MenuView x:Name="_MenuView" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3"/>
         
         <!--Right: VIEWS-->
-        <controls:HomeView x:Name="_HomeView" Grid.Column="1"/>
-        <controls:BioView x:Name="_BioView" Grid.Column="1"/>
-        <controls:SkillsView x:Name="_SkillsView" Grid.Column="1"/>
-        <controls:ProfessionalView x:Name="_ProfessionalView" Grid.Column="1"/>
-        <controls:KataView x:Name="_KataView" Grid.Column="1"/>
-        <controls:ContactView x:Name="_Contact" Grid.Column="1"/>
+        <controls:HomeView x:Name="_HomeView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <controls:BioView x:Name="_BioView" Grid.Column="1" Grid.Row="3"/>
+        <controls:SkillsView x:Name="_SkillsView" Grid.Column="1" Grid.Row="3"/>
+        <controls:ProfessionalView x:Name="_ProfessionalView" Grid.Column="1" Grid.Row="3"/>
+        <controls:KataView x:Name="_KataView" Grid.Column="1" Grid.Row="3"/>
+        <controls:ContactView x:Name="_Contact" Grid.Column="1" Grid.Row="3"/>
     </Grid>
 </UserControl>
