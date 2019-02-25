@@ -8,6 +8,20 @@ namespace DigiCard.ViewModels
     {
         private Biography model;
 
+        public string Header
+        {
+            get { return header; }
+            set { SetProperty(ref header, value); }
+        }
+        private string header;
+
+        public string Body
+        {
+            get { return body; }
+            set { SetProperty(ref body, value); }
+        }
+        private string body;
+
         public Visibility IsVisible
         {
             get { return isVisible; }
@@ -18,6 +32,8 @@ namespace DigiCard.ViewModels
         public BioViewModel(Biography bioArg)
         {
             model = bioArg;
+            Header = bioArg.header;
+            Body = bioArg.body;
         }
     }
 }

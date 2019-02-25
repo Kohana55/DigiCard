@@ -8,6 +8,11 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Visibility="{Binding IsVisible}">
     <Grid>
-        <TextBlock Text="BIO PAGE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" FontSize="16"/>
+        <TextBlock Text="{Binding Body}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
     </Grid>
 </UserControl>

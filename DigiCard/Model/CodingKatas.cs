@@ -3,8 +3,9 @@
     public class CodingKatas
     {
 
-        public string header = "From Model";
-        public string body = "From Model";
+        public string header = "Coding Katas";
+        public string body = "FizzBuzz: <Click Here>\n" +
+                             "BubbleSort: <Click Here>";
 
         public CodingKatas() { }
     }

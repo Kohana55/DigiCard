@@ -3,8 +3,9 @@
     public class Professional
     {
 
-        public string header = "From Model";
-        public string body = "From Model";
+        public string header = "Professional History";
+        public string body = "Cambridge Micro Apps\nSenior Software Engineer\nWorking on RT systems with the stock exchange\n\n" +
+                             "Close Air Solutions\nSoftware Engineer\nWorking in defence with governments around the world";
 
         public Professional() { }
     }

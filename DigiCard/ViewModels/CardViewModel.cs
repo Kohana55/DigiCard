@@ -71,10 +71,10 @@ namespace DigiCard.ViewModels
             menuVM = new MenuViewModel();
             homeVM = new HomeViewModel(model.home);
             bioVM = new BioViewModel(model.bio);
-            skillsVM = new SkillsViewModel();
-            proVM = new ProViewModel();
-            kataVM = new KataViewModel();
-            contactVM = new ContactViewModel();
+            skillsVM = new SkillsViewModel(model.skills);
+            proVM = new ProViewModel(model.pro);
+            kataVM = new KataViewModel(model.kata);
+            contactVM = new ContactViewModel(model.contact);
             
             CurrentPage = Enums.Views.Home;
 
