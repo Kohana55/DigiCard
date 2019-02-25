@@ -12,7 +12,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" FontSize="16"/>
+        <TextBlock Text="{Binding Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Grid.Row="0" FontSize="26"/>
         <TextBlock Text="{Binding Body}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
     </Grid>
 </UserControl>

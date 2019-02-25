@@ -27,10 +27,10 @@
         
         <!--Right: VIEWS-->
         <controls:HomeView x:Name="_HomeView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
-        <controls:BioView x:Name="_BioView" Grid.Column="1" Grid.Row="3"/>
-        <controls:SkillsView x:Name="_SkillsView" Grid.Column="1" Grid.Row="3"/>
-        <controls:ProfessionalView x:Name="_ProfessionalView" Grid.Column="1" Grid.Row="3"/>
-        <controls:KataView x:Name="_KataView" Grid.Column="1" Grid.Row="3"/>
-        <controls:ContactView x:Name="_Contact" Grid.Column="1" Grid.Row="3"/>
+        <controls:BioView x:Name="_BioView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <controls:SkillsView x:Name="_SkillsView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <controls:ProfessionalView x:Name="_ProfessionalView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <controls:KataView x:Name="_KataView" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <controls:ContactView x:Name="_Contact" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
     </Grid>
 </UserControl>
